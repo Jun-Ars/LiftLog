@@ -1,0 +1,39 @@
+# Ignore the virtual environment directory
+venv/
+
+# Ignore Python bytecode files
+*.pyc
+__pycache__/
+
+# Ignore local environment files
+.env
+
+# Ignore IDE-specific files (optional, for common editors)
+.vscode/
+.idea/
+
+# Ignore Django migrations (optional)
+*/migrations/*
+
+# Ignore log files
+*.log
+
+# Ignore compiled files
+*.so
+*.o
+*.py[cod]
+
+# Ignore database files
+*.sqlite3
+
+# Ignore macOS-specific files
+.DS_Store
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# Ignore test and cache directories (optional)
+*.pytest_cache/
+.tox/
