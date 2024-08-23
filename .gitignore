@@ -8,11 +8,11 @@ __pycache__/
 # Ignore local environment files
 .env
 
-# Ignore IDE-specific files (optional, for common editors)
+# Ignore IDE-specific files
 .vscode/
 .idea/
 
-# Ignore Django migrations (optional)
+# Ignore Django migrations
 */migrations/*
 
 # Ignore log files
@@ -34,6 +34,6 @@ htmlcov/
 .coverage
 .coverage.*
 
-# Ignore test and cache directories (optional)
+# Ignore test and cache directories
 *.pytest_cache/
 .tox/
