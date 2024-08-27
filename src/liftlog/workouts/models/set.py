@@ -5,7 +5,7 @@ from .exercise import Exercise
 class Set(models.Model):
     exercise = models.ForeignKey(Exercise, on_delete=models.CASCADE, related_name='sets')
     set_number = models.IntegerField()
-    weight = models.DecimalField(max_digits=5, decimal_places=2, null=True, blank=True)
+    weight = models.DecimalField(max_digits=5, decimal_places=1, null=True, blank=True) # Weight is optional for non-weighted exercises
     reps = models.IntegerField(null=True, blank=True)  # Reps are optional for duration-based exercises
     duration = models.DurationField(null=True, blank=True)  # Duration is optional for rep-based exercises
 

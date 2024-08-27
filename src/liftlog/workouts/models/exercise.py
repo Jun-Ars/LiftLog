@@ -22,4 +22,4 @@ class Exercise(models.Model):
     user = models.ForeignKey(get_user_model(), on_delete=models.CASCADE, related_name='exercises')
 
     def __str__(self):
-        return f"{self.name} ({self.workout.name})"
+        return f"{self.name} ({self.user})"
