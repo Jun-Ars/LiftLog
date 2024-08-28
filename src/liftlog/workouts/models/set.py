@@ -1,9 +1,11 @@
 from django.db import models
 from django.contrib.auth import get_user_model
 from .exercise import Exercise
+from .workout import Workout
 
 class Set(models.Model):
-    exercise = models.ForeignKey(Exercise, on_delete=models.CASCADE, related_name='sets')
+    exercise = models.ForeignKey(Exercise, on_delete=models.CASCADE, related_name='exercise_sets')
+    workout = models.ForeignKey(Workout, on_delete=models.CASCADE, related_name='workout_sets')
     set_number = models.IntegerField()
     weight = models.DecimalField(max_digits=5, decimal_places=1, null=True, blank=True) # Weight is optional for non-weighted exercises
     reps = models.IntegerField(null=True, blank=True)  # Reps are optional for duration-based exercises
